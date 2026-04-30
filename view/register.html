@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link fuentes de google fonts fuenta-zain -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link de iconos (bootstraps) -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        />
+        <!-- link del icono -->
+        <link rel="icon" href="../images/logo.svg" type="image/svg" />
+        <!-- link del css -->
+        <link rel="stylesheet" href="../css/register.css" />
+        <link rel="stylesheet" href="../css/partials.css" />
+        <title>Registrate</title>
+    </head>
+    <body>
+        <div class="backgorund">
+            <img
+                src="../images/logo.svg"
+                alt="Importadora Perez"
+                class="logosolute"
+            />
+            <form id="form" class="glass_container">
+                <h1>Regístrate</h1>
+
+                <h2 class="align-text">Datos Personales</h2>
+
+                <!-- Contenedor de inputs ÷ 2 -->
+                <div class="display-flex">
+                    <!-- primer input  Nombre -->
+                    <div class="input">
+                        <label for="nombre"
+                            >Nombre <span class="red">*</span></label
+                        >
+                        <!-- contenedor del input -->
+                        <div class="inner-input">
+                            <input
+                                type="text"
+                                class="get_info"
+                                placeholder="Juan"
+                                id="nombre"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <!-- segundo input  Apellido -->
+                    <div class="input">
+                        <label for="apellido"
+                            >Apellido <span class="red">*</span></label
+                        >
+                        <!-- contenedor del segundo input -->
+                        <div class="inner-input">
+                            <input
+                                type="text"
+                                class="get_info"
+                                placeholder="Pérez"
+                                id="apellido"
+                                required
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="input">
+                    <label for="telefono"
+                        >Teléfono <span class="red">*</span></label
+                    >
+                    <div class="inner-input">
+                        <input
+                            type="tel"
+                            class="get_info"
+                            placeholder="809 000 0000"
+                            id="telefono"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <!-- Correo electronico -->
+                <div class="input">
+                    <label for="email"
+                        >Correo Electronico <span class="red">*</span></label
+                    >
+                    <div class="inner-input">
+                        <input
+                            type="email"
+                            class="get_info"
+                            placeholder="juanP@gmail.com"
+                            id="email"
+                            autocomplete="on"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="input">
+                    <label for="contrasena"
+                        >Contraseña <span class="red">*</span></label
+                    >
+                    <div class="inner-input">
+                        <input
+                            type="password"
+                            class="get_info"
+                            placeholder="12345678"
+                            id="contrasena"
+                            min-lenght="8"
+                            autocomplete="off"
+                            required
+                        />
+                        <i class="bi bi-eye" id="firstEye"></i>
+                    </div>
+                </div>
+
+                <!-- Confirmar Contraseña -->
+                <div class="input">
+                    <label for="confirmarContrasena"
+                        >Confirmar Contraseña <span class="red">*</span></label
+                    >
+                    <div class="inner-input">
+                        <input
+                            type="password"
+                            class="get_info"
+                            placeholder="12345678"
+                            id="confirmarContrasena"
+                            min-legnth="8"
+                            autocomplete="off"
+                            required
+                        />
+                        <i class="bi bi-eye" id="secondEye"></i>
+                    </div>
+                </div>
+
+                <!-- Empresa -->
+                <div class="input">
+                    <label for="empresa">Empresa</label>
+                    <div class="inner-input">
+                        <input
+                            type="text"
+                            id="empresa"
+                            min-length="8"
+                            class="get_info"
+                        />
+                    </div>
+                </div>
+
+                <h2 class="align-text">Direccion</h2>
+
+                <!-- Provincia -->
+                <div class="input">
+                    <p>Provincia <span class="red">*</span></p>
+                    <div class="inner-input">
+                        <select name="opciones" class="opciones">
+                            <option value="valor1">Santo Domingo</option>
+                            <option value="valor2">Santiago</option>
+                            <option value="valor3">Bonao</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Ciudad -->
+                <div class="input">
+                    <p>Provincia <span class="red">*</span></p>
+                    <div class="inner-input">
+                        <select name="opciones" class="opciones">
+                            <option value="valor1">Santo Domingo Este</option>
+                            <option value="valor2">Santiago Oeste</option>
+                            <option value="valor2">Pedro Garcia</option>
+                            <option value="valor3">La canela</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Calle -->
+                <div class="input">
+                    <label for="calle">Calle <span class="red">*</span></label>
+                    <div class="inner-input">
+                        <input
+                            type="text"
+                            class="get_info"
+                            id="calle"
+                            placeholder="Calle 11"
+                            require
+                        />
+                    </div>
+                </div>
+
+                <!-- Numero de casa -->
+                <div class="input">
+                    <label for="casa"
+                        >Número de casa <span class="red">*</span></label
+                    >
+                    <div class="inner-input">
+                        <input
+                            type="text"
+                            class="get_info"
+                            id="casa"
+                            placeholder="#16"
+                            require
+                        />
+                    </div>
+                </div>
+
+                <!-- Código Postal -->
+                <div class="input">
+                    <label for="postal"
+                        >Código Postal <span class="red">*</span></label
+                    >
+                    <div class="inner-input">
+                        <input
+                            type="text"
+                            class="get_info"
+                            id="postal"
+                            placeholder="51000"
+                            min-lenght="5"
+                            max-lenght="5"
+                            require
+                        />
+                    </div>
+                </div>
+
+                <button type="submit">Registrate</button>
+
+                <a href="./login.html">¿Ya tines una cuenta?</a>
+            </form>
+        </div>
+
+        <!-- ----------------------------------------------------------------------------- -->
+        <!-- footer -->
+        <footer>
+            <div class="foot_text">
+                <h3 class="text_title_footer">
+                    Importadora <br />
+                    Perez
+                </h3>
+                <p class="text_subtitle_footer">
+                    +10 años vistiendo a <br />
+                    caballeros dominicanos
+                </p>
+            </div>
+            <div class="foot_text">
+                <h3 class="footer_title">categorias</h3>
+                <p class="footer_text">T-shirt</p>
+                <p class="footer_text">Polos</p>
+                <p class="footer_text">Calzado</p>
+                <p class="footer_text">Fragancias</p>
+                <p class="footer_text">Gorras</p>
+                <p class="footer_text">Relojes</p>
+            </div>
+            <div class="foot_text">
+                <h3 class="footer_title">Contacto</h3>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-telephone-fill footer_icon"></i>
+                        +1 (809) 457 - 3459
+                    </p>
+                </div>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-calendar3 footer_icon"></i>
+                        Lun - Sab 9am - 7pm
+                    </p>
+                </div>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-instagram footer_icon"></i>
+                        Instagram
+                    </p>
+                </div>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-facebook footer_icon"></i>
+                        Facebook
+                    </p>
+                </div>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-tiktok footer_icon"></i>
+                        TikTok
+                    </p>
+                </div>
+                <a href="#" class="footer_link">Ver más</a>
+            </div>
+            <div class="foot_text">
+                <h3 class="footer_title">Sucursales</h3>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Santiago (2)
+                    </p>
+                </div>
+                <div>
+                    <p class="footer_text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Puerto Plata (2)
+                    </p>
+                </div>
+                <a href="#" class="footer_link">Ver más</a>
+            </div>
+            <div class="foot_text">
+                <h3 class="footer_title">Envios y pagos</h3>
+                <p class="footer_text">
+                    <i class="bi bi-truck"></i>
+                    Caribe Express <br />
+                    Efectivo, tarjeta y <br />
+                    transferencia.
+                </p>
+            </div>
+        </footer>
+        <script src="../js/register.js"></script>
+    </body>
+</html>

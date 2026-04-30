@@ -24,10 +24,9 @@ input.forEach((thing) => {
     });
 })
 
+// Mostrar y ocultar contraseña
 let firstEye = document.getElementById("firstEye");
 let firstInput = document.getElementById("contrasena");
-let secondEye = document.getElementById("secondEye");
-let secondInput = document.getElementById("confirmarContrasena");
 
 firstEye.addEventListener('click', (e) => {
     if (firstInput.type === 'password') {
@@ -37,14 +36,4 @@ firstEye.addEventListener('click', (e) => {
     };
     firstEye.classList.toggle("bi-eye");
     firstEye.classList.toggle("bi-eye-slash");
-});
-
-secondEye.addEventListener("click", (e) => {
-    if (secondInput.type === "password") {
-        secondInput.type = "text";
-    } else {
-        secondInput.type = "password";
-    }
-    Eye.classList.toggle("bi-eye");
-    Eye.classList.toggle("bi-eye-slash");
 });

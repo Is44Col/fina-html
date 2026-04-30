@@ -82,3 +82,14 @@ let btnCatlog = document.querySelector(".btn-catalogo");
 btnCatlog.addEventListener("click", (e) => {
     window.location.href = "../view/catalog.html";
 });
+
+let login = document.querySelector('.login');
+let register = document.querySelector('.register');
+
+login.addEventListener('click', (e) => {
+    window.location.href = "./view/login.html";
+})
+
+register.addEventListener("click", (e) => {
+    window.location.href = "./view/register.html";
+});

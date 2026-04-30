@@ -19,6 +19,7 @@
 h1 {
     font-size: 5rem;
     line-height: 3rem;
+    margin-bottom: 45px;
 }
 
 #form {
@@ -30,6 +31,7 @@ h1 {
     padding: 10vh 10dvh 5dvh;
     gap: 3dvh;
     max-width: 550px;
+    border: 1px solid #fff6;
 }
 
 .display-flex {
