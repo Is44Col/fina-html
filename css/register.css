@@ -1,0 +1,130 @@
+.backgorund {
+    background: conic-gradient(at 100% 70%, #c4a484, #fff, #c4a484);
+    display: flex;
+    justify-content: center;
+    padding: 10dvh 0;
+}
+
+.logosolute {
+    width: 4vw;
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+}
+
+.logosolute:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 3rem;
+}
+
+#form {
+    width: 50vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 10dvh 5dvh;
+    gap: 3dvh;
+    max-width: 650px;
+}
+
+.display-flex {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.red {
+    color: red;
+}
+
+.input {
+    width: 100%;
+}
+
+.inner-input {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+    font-size: 1.2rem;
+    outline-offset: 2px;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.bi-eye, .bi-eye-slash {
+    font-size: 1rem;
+    padding-right: 3px;
+}
+
+.bi-eye:hover, .bi-eye-slash:hover {
+    cursor: pointer;
+}
+
+.opciones {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    border-radius: 35px;
+    border: none;
+    padding: 20px;
+    background-color: #000;
+    box-shadow:
+        inset 0 4px 7.5px 0 rgba(000, 000, 000, 1),
+        inset 0 12px 13.4px 3px rgba(246, 246, 246, 0.63),
+        0 4px 4px 0 rgba(000, 000, 000, 0.25);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.align-text {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    #form {
+        width: 90vw;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 3.7rem;
+    }
+
+    .logosolute {
+        width: 30px;
+        top: 5vh;
+        left: 5vh;
+    }
+
+    .display-flex {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    #form {
+        width: 75vw;
+        padding: 80px;
+    }
+}
